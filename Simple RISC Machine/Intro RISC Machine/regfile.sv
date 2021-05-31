@@ -74,6 +74,5 @@ logic[data_width * 8 - 1:0] register_out;
       default: data_out = data_out;
     endcase
   end
-//assign data_out = register_out[data_width * (readnum + 4'b1) - 1: data_width * readnum];
 
 endmodule

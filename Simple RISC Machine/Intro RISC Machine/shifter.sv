@@ -1,3 +1,9 @@
+/*********************
+**Author: Atahan Akar
+**File Name: shifter.sv
+**Title: Shifter operations
+**Description: TBD
+**********************/
 module shifter #(
     data_width = 16
   )(

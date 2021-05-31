@@ -1,9 +1,9 @@
-{C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/shifter.sv} {1 {vlog -work work -sv -stats=none {C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/shifter.sv}
+{C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/ALU.sv} {1 {vlog -work work -sv -stats=none {C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/ALU.sv}
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
--- Compiling module shifter
+-- Compiling module ALU
 
 Top level modules:
-	shifter
+	ALU
 
 } {} {}} {C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/regfile.sv} {1 {vlog -work work -sv -stats=none {C:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Intro RISC Machine\regfile.sv}
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
@@ -12,12 +12,12 @@ Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 Top level modules:
 	regfile
 
-} {} {}} {C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/ALU.sv} {1 {vlog -work work -sv -stats=none {C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/ALU.sv}
+} {} {}} {C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/regfile_tb.sv} {1 {vlog -work work -sv -stats=none {C:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Intro RISC Machine\regfile_tb.sv}
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
--- Compiling module ALU
+-- Compiling module regfile_tb
 
 Top level modules:
-	ALU
+	regfile_tb
 
 } {} {}} {C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/vDFFE.sv} {1 {vlog -work work -sv -stats=none {C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/vDFFE.sv}
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014

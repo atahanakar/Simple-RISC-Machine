@@ -20,8 +20,19 @@ module regfile #(
  );
 
  // 3 : 8 decoder
- logic [7:0] decoded_writenum = (2 ^ writenum);
- logic [7:0] decoded_readnum  = (2 ^ readnum);
+ logic [7:0] decoded_writenum;
+ always @ (*) begin
+   case(writenum)
+     3'b000: decoded_writenum = 8'b0000_0001;
+     3'b001: decoded_writenum = 8'b0000_0010;
+     3'b010: decoded_writenum = 8'b0000_0100;
+     3'b011: decoded_writenum = 8'b0000_1000;
+     3'b100: decoded_writenum = 8'b0001_0000;
+     3'b101: decoded_writenum = 8'b0010_0000;
+     3'b110: decoded_writenum = 8'b0100_0000;
+     3'b111: decoded_writenum = 8'b1000_0000;
+   endcase
+ end
 
  // ANDed writenum with write signal
  logic [7:0] anded_writenum; // also register_in

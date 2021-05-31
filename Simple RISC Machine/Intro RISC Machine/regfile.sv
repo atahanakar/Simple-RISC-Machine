@@ -37,16 +37,17 @@ module regfile #(
  // ANDed writenum with write signal
  logic [7:0] anded_writenum; // also register_in
 
+ genvar i;
  generate
-   for(genvar i = 0; i < 8; i = i + 1)begin
+   for(i = 0; i < 8; i = i + 1)begin : anded
      assign anded_writenum[i] = decoded_writenum[i] & write;
    end
  endgenerate
 
 // vDFFE for 8 registers
-logic[data_width * 8 - 1:0] register_out;
-  generate
-    for(genvar i = 0; i < 8; i = i + 1) begin
+ logic[data_width * 8 - 1:0] register_out;
+ generate
+    for(i = 0; i < 8; i = i + 1) begin :reg_en
         vDFFE #(
             .data_width(data_width)
           )
@@ -58,7 +59,7 @@ logic[data_width * 8 - 1:0] register_out;
             .out(register_out[data_width * (i + 1) - 1: data_width * i])
           );
         end
-  endgenerate
+ endgenerate
 
 // Data Out logic
   always @(*) begin

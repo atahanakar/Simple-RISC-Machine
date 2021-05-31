@@ -4,7 +4,7 @@
 **Title: Register with Load Enable Circuit
 **Description: TBD
 **********************/
-module vDFFE(
+module vDFFE #(
   parameter data_width = 16
   )
   (

@@ -50,6 +50,6 @@ generate
 endgenerate
 
 // Data Out logic
-assign data_out = register_out[data_width * (readnum + 1) - 1:0]
+assign data_out = register_out[data_width * (readnum + 1) - 1:0];
 
 endmodule

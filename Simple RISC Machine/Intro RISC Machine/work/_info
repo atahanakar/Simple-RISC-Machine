@@ -34,23 +34,23 @@ Z4 o-work work -sv
 n@a@l@u
 vALU_tb
 R0
-!s110 1622446381
+!s110 1622489831
 !i10b 1
-!s100 `9l220b`^YMJP@R6aJ;Jz2
-IANCNHE6h>>h3Jd8PUcg^01
+!s100 AVmPa5lhzG8VidH=87bN81
+IXHBXdcEn<KSBX>o>ad1Za3
 R1
 !s105 ALU_tb_sv_unit
 S1
 R2
-w1622446375
+w1622446706
 8C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/ALU_tb.sv
 FC:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/ALU_tb.sv
-L0 1
+L0 2
 R3
 r1
 !s85 0
 31
-!s108 1622446381.811000
+!s108 1622489831.838000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/ALU_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/ALU_tb.sv|
 !i113 1
@@ -58,15 +58,15 @@ R4
 n@a@l@u_tb
 vregfile
 R0
-!s110 1622444221
+!s110 1622489828
 !i10b 1
-!s100 Ha7@mdK0F7A0@a[^I5h3N2
-IL_:Xl`oE[R>ebfH1^]9Oi2
+!s100 EP6X9g7IVXKX7@lJbWII03
+I^ZQlFK4C<Y79Zm4jJia623
 R1
 !s105 regfile_sv_unit
 S1
 R2
-w1622444179
+w1622446664
 8C:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Intro RISC Machine\regfile.sv
 FC:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Intro RISC Machine\regfile.sv
 L0 8
@@ -74,7 +74,7 @@ R3
 r1
 !s85 0
 31
-!s108 1622444221.450000
+!s108 1622489828.539000
 !s107 C:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Intro RISC Machine\regfile.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Intro RISC Machine\regfile.sv|
 !i113 1
@@ -104,30 +104,53 @@ r1
 R4
 vshifter
 R0
-Z5 !s110 1622443911
+!s110 1622489187
 !i10b 1
-!s100 bC@4lDki[R3jjjDSQddS>3
-IMOU^R7jl6BCIdiBRkje4=1
+!s100 cQm6Y7CBGKBXE7?GFbaQb3
+IemSo2a7zNdHfbQfRg5n3l3
 R1
 !s105 shifter_sv_unit
 S1
 R2
-w1622443179
+w1622489178
 8C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/shifter.sv
 FC:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/shifter.sv
-L0 1
+L0 7
 R3
 r1
 !s85 0
 31
-!s108 1622443911.734000
+!s108 1622489187.619000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/shifter.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/shifter.sv|
 !i113 1
 R4
+vshifter_tb
+R0
+!s110 1622489825
+!i10b 1
+!s100 B:JQZ9P`1_LG5Q0P_;C3i3
+I4P@[XhXjoGd0nRGUWb2K^2
+R1
+!s105 shifter_tb_sv_unit
+S1
+R2
+w1622489788
+8C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/shifter_tb.sv
+FC:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/shifter_tb.sv
+L0 13
+R3
+r1
+!s85 0
+31
+!s108 1622489825.344000
+!s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/shifter_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/shifter_tb.sv|
+!i113 1
+R4
 vvDFFE
 R0
-R5
+!s110 1622443911
 !i10b 1
 !s100 JT622VlY^Q>><TEfJCZzQ0
 I;cfOGI9jzZUSOQF_:8Sa52

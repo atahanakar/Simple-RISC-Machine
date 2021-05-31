@@ -57,15 +57,15 @@ r1
 R5
 vregfile_tb
 R0
-R1
+!s110 1622444895
 !i10b 1
-!s100 1;lMQGIaV`M@]6N_[9n]H0
-I]ahHb@WFG=`0XR<YkfKl31
+!s100 Bf=R^9Y@aK5oLG`EI8gG41
+I`=a906RanDZ]a;mN8_;8j3
 R2
 !s105 regfile_tb_sv_unit
 S1
 R3
-w1622443904
+w1622444885
 8C:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Intro RISC Machine\regfile_tb.sv
 FC:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Intro RISC Machine\regfile_tb.sv
 L0 2
@@ -73,7 +73,7 @@ R4
 r1
 !s85 0
 31
-!s108 1622443911.782000
+!s108 1622444895.711000
 !s107 C:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Intro RISC Machine\regfile_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Intro RISC Machine\regfile_tb.sv|
 !i113 1

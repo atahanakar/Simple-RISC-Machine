@@ -1,4 +1,4 @@
-module shifter(
+module shifter #(
     data_width = 16
   )(
     // INPUTS
@@ -7,6 +7,6 @@ module shifter(
     // OUTPUTS
     output logic [data_width - 1:0] sout1
   );
-
+  // Insert the code here
 
 endmodule

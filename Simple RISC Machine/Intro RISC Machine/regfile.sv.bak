@@ -50,7 +50,7 @@ logic[data_width * 8 - 1:0] register_out;
   endgenerate
 
 // Data Out logic
-  always @(*) begin
+  always_comb @(*) begin
     case(readnum)
       3'b000: data_out = register_out[15:0];
       3'b001: data_out = register_out[31:16];

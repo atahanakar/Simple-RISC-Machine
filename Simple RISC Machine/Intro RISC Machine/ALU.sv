@@ -1,4 +1,4 @@
-module ALU(
+module ALU #(
   parameter data_width = 16
   )(
   // INPUTS
@@ -9,6 +9,7 @@ module ALU(
   output logic [data_width - 1:0] out,
   output logic Z
   );
+  // Insert the code here
 
 
 endmodule

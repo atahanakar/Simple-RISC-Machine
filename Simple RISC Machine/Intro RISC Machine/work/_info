@@ -56,6 +56,52 @@ r1
 !i113 1
 R4
 n@a@l@u_tb
+vdatapath
+R0
+!s110 1622491619
+!i10b 1
+!s100 ]NjOHLAPdmA0ZFN7NDzVB3
+IT;@7<S>mnmN`4WoB]][Q^2
+R1
+!s105 datapath_sv_unit
+S1
+R2
+w1622491609
+8C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/datapath.sv
+FC:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/datapath.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1622491619.510000
+!s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/datapath.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/datapath.sv|
+!i113 1
+R4
+vdatapath_tb
+R0
+!s110 1622493723
+!i10b 1
+!s100 Q7283TE[P[IUkd5lb298@0
+I1IAGGADV?l`odBNXf2e1b3
+R1
+!s105 datapath_tb_sv_unit
+S1
+R2
+w1622493710
+8C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/datapath_tb.sv
+FC:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/datapath_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1622493723.456000
+!s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/datapath_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Intro RISC Machine/datapath_tb.sv|
+!i113 1
+R4
 vregfile
 R0
 !s110 1622489828

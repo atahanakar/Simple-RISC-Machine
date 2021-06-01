@@ -1,22 +1,6 @@
 INSTRUCTIONS:
 
-You can use this file to demo your Lab5 on your DE1-SoC.  You should NOT 
-spend ANY time looking at this file until you have first read the Lab 5 
-handout completely and especially Sections 3 (Lab Procedure) and Section 4
-(which describes the marking scheme).
-
-If you prefer you can instead use your own version of lab5_top.v.
-
-You MUST submit whichever lab5_top.v you used during your demo with handin.
-
-If you DO use this file you will need to fill in the sseg module as by
-default it will just print F's on HEX0 through HEX3.  Also, the signal 
-names inside the lab5_top module may need to be change to match the 
-ones you use in your own datapath module.
-
-
-
-DE1-SOC INTERFACE SPECIFICATION for lab5_top.v code in this file:
+DE1-SOC INTERFACE SPECIFICATION 
 
 clk input to datpath has rising edge when KEY0 is *pressed* 
 

@@ -80,25 +80,48 @@ r1
 R4
 vfsm
 R0
-!s110 1622512852
+!s110 1622517345
 !i10b 1
-!s100 SS];35MeYF<A0gzXLMzTH1
-IITNHT^_2AW4XhFhAEdL0k3
+!s100 g5V>5FECMUfE7oXdjM4Kc0
+ISecM=cX4z;<WcIT60USlc1
 R1
 !s105 fsm_sv_unit
 S1
 R2
-w1622512846
+w1622517223
 8C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/FSM Controller for RISC Machine/fsm.sv
 FC:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/FSM Controller for RISC Machine/fsm.sv
-L0 1
+L0 2
 R3
 r1
 !s85 0
 31
-!s108 1622512852.266000
+!s108 1622517345.508000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/FSM Controller for RISC Machine/fsm.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/FSM Controller for RISC Machine/fsm.sv|
+!i113 1
+R4
+vfsm_tb
+R0
+!s110 1622517858
+!i10b 1
+!s100 J5P83bM_KF9_]Ne?U2J3k3
+I<8>IUKM@9P^@:aL[j6:o=2
+R1
+!s105 fsm_tb_sv_unit
+S1
+R2
+w1622517852
+8C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/FSM Controller for RISC Machine/fsm_tb.sv
+FC:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/FSM Controller for RISC Machine/fsm_tb.sv
+L0 23
+R3
+r1
+!s85 0
+31
+!s108 1622517858.236000
+!s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/FSM Controller for RISC Machine/fsm_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/FSM Controller for RISC Machine/fsm_tb.sv|
 !i113 1
 R4
 vinput_iface

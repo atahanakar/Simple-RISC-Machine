@@ -112,14 +112,6 @@ module vDFF(clk,D,Q);
     Q <= D;
 endmodule
 
-
-// The sseg module below can be used to display the value of datpath_out on
-// the hex LEDS the input is a 4-bit value representing numbers between 0 and
-// 15 the output is a 7-bit value that will print a hexadecimal digit.  You
-// may want to look at the code in Figure 7.20 and 7.21 in Dally but note this
-// code will not work with the DE1-SoC because the order of segments used in
-// the book is not the same as on the DE1-SoC (see comments below).
-
 module sseg(
   // INPUT
   input logic [3:0]in,

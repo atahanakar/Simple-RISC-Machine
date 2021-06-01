@@ -1,7 +1,5 @@
 INSTRUCTIONS:
 
-DE1-SOC INTERFACE SPECIFICATION for lab6_top.v code in this file:
-
 clk input to datpath has rising edge when KEY0 is *pressed*
 
 HEX5 contains the status register output on the top (Z), middle (N) and

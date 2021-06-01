@@ -15,7 +15,9 @@ module ALU #(
 
   // OUTPUTS
   output logic [data_width - 1:0] out,
-  output logic Z
+  output logic Z,
+  output logic N,
+  output logic V
   );
   // Insert the code here
 
@@ -30,7 +32,10 @@ module ALU #(
     endcase
   end
 
-  // Zero Bit
+  // Z, N, V Flags
   assign Z = ({16{1'b0}} == out);
+  assign N = (out < 0);
+  assign V = ((out < 0) & (Ain > 0) & (Bin > 0) & (ALUop == 2'b00)) ||
+             ((out < 0) & (Ain > 0) & (Bin < 0) & (ALUop == 2'b01));
 
 endmodule

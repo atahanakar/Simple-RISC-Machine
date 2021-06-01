@@ -3,7 +3,10 @@ module datapath #(
   )
   (
     // INPUTS
-    input logic [data_width - 1:0] datapath_in,
+    input logic [data_width - 1:0] mdata,
+    input logic [data_width - 1:0] sximm8,
+    input logic [data_width - 1:0] sximm5,
+    input logic [7:0] PC,
     input logic [2:0] writenum,
     input logic [2:0] readnum,
     // ALU and Shift operations
@@ -21,13 +24,16 @@ module datapath #(
     //Mux select signals
     input logic asel,
     input logic bsel,
-    input logic vsel,
+    input logic [1:0] vsel,
 
     // OUTPUTS
     output logic [data_width - 1:0] datapath_out,
 
     // Flag Outputs
-    output logic Z_out  // Zero Flag
+    output logic Z_out,  // Zero Flag
+    output logic V_out,  // Overflow Flag
+    output logic N_out   // Negative Flag
+
 
   );
 
@@ -36,7 +42,15 @@ module datapath #(
   logic [data_width - 1:0] sout, Aout;
   logic Z;
   // Mux #1
-  assign data_in = vsel ? datapath_in : datapath_out;
+  always @ (*) begin
+    case(vsel)
+      2'b00: data_in = datapath_out; // C
+      2'b01: data_in = {8'b0, PC};
+      2'b10: data_in = sximm8;
+      2'b11: data_in = mdata;
+      default: data_in = data_in;
+    endcase
+  end
 
   // Register File
   regfile #(
@@ -83,13 +97,13 @@ module datapath #(
   );
 
   vDFFE #(
-    .data_width(1)
+    .data_width(3)
   )
   status(
     .clk(clk),
-    .in(Z),
+    .in({Z, N, V}),
     .load(loads),
-    .out(Z_out)
+    .out({Z_out, N_out, V_out})
   );
 
   //Shifter
@@ -104,7 +118,7 @@ module datapath #(
 
   // 2 Mux's
   assign Ain = asel ? 16'b0 : Aout;
-  assign Bin = bsel ? {11'b0, datapath_in[4:0]} : sout;
+  assign Bin = bsel ? sximm5 : sout;
 
   // ALU
   ALU #(
@@ -115,7 +129,9 @@ module datapath #(
     .Bin(Bin),
     .ALUop(ALUop),
     .out(out),
-    .Z(Z)
+    .Z(Z),
+    .N(N),
+    .V(V)
   );
 
 endmodule

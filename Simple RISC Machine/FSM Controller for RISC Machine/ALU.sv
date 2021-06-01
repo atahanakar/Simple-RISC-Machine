@@ -34,8 +34,8 @@ module ALU #(
 
   // Z, N, V Flags
   assign Z = ({16{1'b0}} == out);
-  assign N = (out < 0);
-  assign V = ((out < 0) & (Ain > 0) & (Bin > 0) & (ALUop == 2'b00)) ||
-             ((out < 0) & (Ain > 0) & (Bin < 0) & (ALUop == 2'b01));
+  assign N = out[15];
+  assign V = (out[15] & Ain[15] & Bin[15] & (ALUop == 2'b00)) ||
+             (out[15] & ~Ain[15] & Bin[15] & (ALUop == 2'b01));
 
 endmodule

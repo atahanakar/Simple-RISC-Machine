@@ -53,7 +53,7 @@ module fsm_tb();
     .loads(loads),
     .asel(asel),
     .bsel(bsel),
-    .vsel(),        //100 010 001
+    .vsel(vsel),        //100 010 001
     .nsel(nsel), // Rn, Rd, Rm
     .w(w),
     .write(write)

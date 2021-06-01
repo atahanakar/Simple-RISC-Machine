@@ -21,24 +21,26 @@ module fsm(
   );
 
   // States
-  parameter WAIT      = 16'b0_0_1_000_00_0_0_0__00000; // 0
-  parameter DECODE    = 16'b0_0_0_000_00_0_0_0__00001; // 1
-  parameter MOV_IMM   = 16'b0_1_0_100_10_0_0_0__00010; // 2
-  parameter MOV_REG_1 = 16'b0_0_0_001_00_0_0_0__00011; // 3
-  parameter MOV_REG_2 = 16'b0_0_0_001_00_0_1_0__00100; // 4
-  parameter MOV_REG_3 = 16'b0_0_0_001_00_1_0_0__00101; // 5
-  parameter MOV_REG_4 = 16'b0_1_0_010_00_0_0_0__00110; // 6
-  parameter GET_A     = 16'b0_0_0_100_00_0_0_1__00111; // 7
-  parameter GET_B     = 16'b0_0_0_001_00_0_1_0__01000; // 8
-  parameter ADD       = 16'b0_0_0_000_00_1_0_0__01001; // 9
-  parameter CMP       = 16'b1_0_0_000_00_0_0_0__01010; // 10
-  parameter AND       = 16'b0_0_0_000_00_1_0_0__01011; // 11
-  parameter MVN       = 16'b0_0_0_000_00_1_0_0__01100; // 12
-  parameter WRITE_REG = 16'b0_1_0_010_00_0_0_0__01101; // 13
+  parameter WAIT      = 18'b0_0_0_0_1_000_00_0_0_0__00000; // 0
+  parameter DECODE    = 18'b0_0_0_0_0_000_00_0_0_0__00001; // 1
+  parameter MOV_IMM   = 18'b0_0_0_1_0_100_10_0_0_0__00010; // 2
+  parameter MOV_REG_1 = 18'b0_0_0_0_0_001_00_0_0_0__00011; // 3
+  parameter MOV_REG_2 = 18'b0_0_0_0_0_001_00_0_1_0__00100; // 4
+  parameter MOV_REG_3 = 18'b0_1_0_0_0_001_00_1_0_0__00101; // 5
+  parameter MOV_REG_4 = 18'b0_0_0_1_0_010_00_0_0_0__00110; // 6
+  parameter GET_A     = 18'b0_0_0_0_0_100_00_0_0_1__00111; // 7
+  parameter GET_B     = 18'b0_0_0_0_0_001_00_0_1_0__01000; // 8
+  parameter ADD       = 18'b0_0_0_0_0_000_00_1_0_0__01001; // 9
+  parameter CMP       = 18'b0_0_1_0_0_000_00_0_0_0__01010; // 10
+  parameter AND       = 18'b0_0_0_0_0_000_00_1_0_0__01011; // 11
+  parameter MVN       = 18'b0_0_0_0_0_000_00_1_0_0__01100; // 12
+  parameter WRITE_REG = 18'b0_0_0_1_0_010_00_0_0_0__01101; // 13
 
-  logic [15:0] state;
+  logic [17:0] state;
 
   // Output logic
+  assign bsel  = state[17];
+  assign asel  = state[16];
   assign loads = state[15];
   assign write = state[14];
   assign w     = state[13];
@@ -48,8 +50,7 @@ module fsm(
   assign loadb = state[6];
   assign loada = state[5];
 
-  assign asel = 1'b0;
-  assign bsel = 1'b0;
+
 
   // Wire for simulation
   wire [4:0] fake_state = state[4:0];

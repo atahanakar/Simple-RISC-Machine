@@ -10,8 +10,8 @@ module datapath #(
     input logic [2:0] writenum,
     input logic [2:0] readnum,
     // ALU and Shift operations
-    input logic [2:0] ALUop,
-    input logic [2:0] shift,
+    input logic [1:0] ALUop,
+    input logic [1:0] shift,
 
     input logic write,
     input logic clk,
@@ -33,14 +33,12 @@ module datapath #(
     output logic Z_out,  // Zero Flag
     output logic V_out,  // Overflow Flag
     output logic N_out   // Negative Flag
-
-
   );
 
   // Essential Signals
   logic [data_width - 1:0] data_in, data_out, out, Ain, Bin, in;
   logic [data_width - 1:0] sout, Aout;
-  logic Z;
+  logic Z, N, V;
   // Mux #1
   always @ (*) begin
     case(vsel)

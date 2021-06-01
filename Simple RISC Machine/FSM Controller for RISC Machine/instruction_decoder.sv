@@ -10,8 +10,8 @@ module instruction_decoder(
     output logic [1:0]  shift,
     output logic [2:0]  readnum,
     output logic [2:0]  writenum,
-    output logic [2:0]  op,
-    output logic [1:0]  opcode
+    output logic [1:0]  op,
+    output logic [2:0]  opcode
   );
 
   // ALUop

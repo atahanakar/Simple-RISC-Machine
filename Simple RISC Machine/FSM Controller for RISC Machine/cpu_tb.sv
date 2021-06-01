@@ -1,3 +1,4 @@
+// Testbench for cpu
 module cpu_tb();
   parameter data_width = 16;
   // INPUTS

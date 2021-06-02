@@ -6,9 +6,6 @@ module cpu #(
   // INPUTS
   input logic clk,
   input logic reset,
-  input logic s,
-  input logic [data_width - 1:0] in,
-  input logic [data_width - 1:0] mdata, //read_data
   input logic [7:0] PC,
 
   //OUTPUTS
@@ -25,7 +22,7 @@ module cpu #(
   parameter MREAD  = 2'b11;
 
   // Essential wires
-  logic [data_width - 1:0] reg_out, sximm5, sximm8, dout;
+  logic [data_width - 1:0] reg_out, sximm5, sximm8, dout, mdata;
   logic [8:0] data_addr_out, next_pc, pc_out;
   logic [2:0] opcode;
   logic [1:0] op, shift, ALUop, vsel, mem_cmd;
@@ -41,7 +38,7 @@ module cpu #(
             (
               .clk(clk),
               .load(load_ir),
-              .in(in),
+              .in(mdata),
               .out(reg_out)
             );
 
@@ -125,14 +122,14 @@ module cpu #(
   // RAM
   RAM #(
         .data_width(data_width),
-        .addr_width(4),
+        .addr_width(8),
         .filename(filename)
         )
         RW_MEM
         (
           .clk(clk),
-          .read_address(mem_addr),
-          .write_address(read_address),
+          .read_address(mem_addr[7:0]),
+          .write_address(mem_addr[7:0]),
           .write(ram_write),
           .din(out),
           .dout(dout)

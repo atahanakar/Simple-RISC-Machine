@@ -1,5 +1,5 @@
 
-module fsm_controller_risc_machine_top(
+module memory_interfaced_risc_machine_top(
   // INPUTS
   input logic  [3:0] KEY,
   input logic  [9:0] SW,

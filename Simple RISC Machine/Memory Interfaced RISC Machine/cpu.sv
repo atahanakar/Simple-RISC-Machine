@@ -7,10 +7,12 @@ module cpu #(
   input logic clk,
   input logic reset,
   input logic [7:0] PC,
+  input logic [data_width - 1:0] mdata,
 
   //OUTPUTS
   output logic [data_width - 1:0] out, //din, write_data
   output logic [8:0] mem_addr,
+  output logic [1:0] mem_cmd,
   output logic N,
   output logic V,
   output logic Z,
@@ -22,10 +24,10 @@ module cpu #(
   parameter MREAD  = 2'b11;
 
   // Essential wires
-  logic [data_width - 1:0] reg_out, sximm5, sximm8, dout, mdata;
+  logic [data_width - 1:0] reg_out, sximm5, sximm8, dout;
   logic [8:0] data_addr_out, next_pc, pc_out;
   logic [2:0] opcode;
-  logic [1:0] op, shift, ALUop, vsel, mem_cmd;
+  logic [1:0] op, shift, ALUop, vsel;
   logic [2:0] nsel;
   logic [2:0] readnum, writenum;
   logic msel, ram_write, ram_read;

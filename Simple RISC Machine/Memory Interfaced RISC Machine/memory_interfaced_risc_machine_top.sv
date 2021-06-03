@@ -15,29 +15,78 @@ module fsm_controller_risc_machine_top(
   );
 
   wire [15:0] out, ir;
-  input_iface IN(
-                CLOCK_50,
-                SW,
-                ir,
-                LEDR[7:0]
-                );
+  // input_iface IN(
+  //               CLOCK_50,
+  //               SW,
+  //               ir,
+  //               LEDR[7:0]
+  //               );
 
   wire Z, N, V;
+
+  // Parameters
+  parameter MWRITE = 2'b01;
+  parameter MREAD  = 2'b11;
+  parameter MEMORY_ADDRESS_1 = 9'h140;
+  parameter MEMORY_ADDRESS_2 = 9'h100;
+
+  // Essential wires
+  logic [15:0] read_data;
+  logic [9:0] mem_addr;
+  logic [1:0] mem_cmd;
+  logic switch_en;
+  logic load_ledr;
+
+  // CL 1
+  always @ (*) begin
+    if(mem_addr == MEMORY_ADDRESS_1 && mem_cmd == MREAD)
+      switch_en = 1'b1;
+    else
+      switch_en = 1'b0;
+  end
+
+  assign read_data[15:8] = switch_en ? 8'h00 : {8{1'bz}};
+  assign read_data[7:0]  = switch_en ? SW[7:0] : {8{1'bz}};
+
+  // CL2
+  always @ (*) begin
+    if(mem_addr == MEMORY_ADDRESS_2 && mem_cmd == MWRITE)
+      load_ledr = 1'b1;
+    else
+      load_ledr = 1'b0;
+  end
+
+  // LEDR Logic
+  vDFFE #(
+          .data_width(8)
+          )
+          LEDR_LOGIC
+          (
+          .clk (~KEY[0]),
+          .load(load_ledr),
+          .in  (out[7:0]),
+          .out (LEDR[7:0])
+          );
+
   cpu #(
-         .data_width(16),
-         .filename("data.txt")
+         .data_width (16),
+         .filename ("data.txt")
         ) U (
-         .clk   (~KEY[0]), // recall from Lab 4 that KEY0 is 1 when NOT pushed
-         .reset (~KEY[1]),
-         .s     (~KEY[2]),
-         .load  (~KEY[3]),
-         .in    (ir),
-         .out   (out),
-         .Z     (Z),
-         .N     (N),
-         .V     (V),
-         .w     (LEDR[9])
+         .clk     (~KEY[0]), // recall from Lab 4 that KEY0 is 1 when NOT pushed
+         .reset   (~KEY[1]),
+         .s       (~KEY[2]),
+         .load    (~KEY[3]),
+         .mdata   (read_data),
+         .mem_addr(mem_addr),
+         .mem_cmd (mem_cmd),
+         .out     (out),
+         .Z       (Z),
+         .N       (N),
+         .V       (V),
+         .w       (LEDR[9])
          );
+
+
 
   assign HEX5[0] = ~Z;
   assign HEX5[6] = ~N;

@@ -1,5 +1,5 @@
 Flow report for fsm_controller_risc_machine_top
-Mon May 31 22:34:47 2021
+Sat Jun 05 00:22:50 2021
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------------+--------------------------------------------+
-; Flow Status                     ; Successful - Mon May 31 22:34:47 2021      ;
+; Flow Status                     ; Successful - Sat Jun 05 00:22:50 2021      ;
 ; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                   ; fsm_controller_risc_machine_top            ;
 ; Top-level Entity Name           ; fsm_controller_risc_machine_top            ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------------------+
 ; Option            ; Setting                         ;
 +-------------------+---------------------------------+
-; Start date & time ; 05/31/2021 22:33:27             ;
+; Start date & time ; 06/05/2021 00:21:29             ;
 ; Main task         ; Compilation                     ;
 ; Revision Name     ; fsm_controller_risc_machine_top ;
 +-------------------+---------------------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 193675816236189.162252560631592 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 193675816236189.162287768928348 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl               ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog) ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
@@ -96,12 +96,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 4913 MB             ; 00:00:17                           ;
-; Fitter                    ; 00:00:51     ; 2.6                     ; 6733 MB             ; 00:01:32                           ;
-; Assembler                 ; 00:00:07     ; 1.0                     ; 4883 MB             ; 00:00:08                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 5249 MB             ; 00:00:07                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4804 MB             ; 00:00:01                           ;
-; Total                     ; 00:01:13     ; --                      ; --                  ; 00:02:05                           ;
+; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 4914 MB             ; 00:00:17                           ;
+; Fitter                    ; 00:00:52     ; 2.7                     ; 6736 MB             ; 00:01:35                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 4881 MB             ; 00:00:07                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 3.5                     ; 5255 MB             ; 00:00:07                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4806 MB             ; 00:00:01                           ;
+; Total                     ; 00:01:13     ; --                      ; --                  ; 00:02:07                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

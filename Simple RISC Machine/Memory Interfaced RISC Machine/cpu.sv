@@ -6,16 +6,11 @@ module cpu #(
   // INPUTS
   input logic clk,
   input logic reset,
-  input logic [7:0] PC,
-  input logic [data_width - 1:0] mdata,
+  input logic [7:0] SW,
 
   //OUTPUTS
   output logic [data_width - 1:0] out, //din, write_data
-  output logic [8:0] mem_addr,
-  output logic [1:0] mem_cmd,
-  output logic N,
-  output logic V,
-  output logic Z,
+  output logic [7:0] LEDR,
   output logic w
   );
 
@@ -24,13 +19,42 @@ module cpu #(
   parameter MREAD  = 2'b11;
 
   // Essential wires
-  logic [data_width - 1:0] reg_out, sximm5, sximm8, dout;
-  logic [8:0] data_addr_out, next_pc, pc_out;
+  logic [data_width - 1:0] reg_out, sximm5, sximm8, dout, mdata;
+  logic [8:0] data_addr_out, next_pc, PC, mem_addr;
   logic [2:0] opcode;
-  logic [1:0] op, shift, ALUop, vsel;
+  logic [1:0] op, shift, ALUop, vsel, mem_cmd;
   logic [2:0] nsel;
   logic [2:0] readnum, writenum;
-  logic msel, ram_write, ram_read;
+  logic msel, ram_read;
+  logic tri_switch, led_load;
+  logic load_ir, loada, loadb, asel, bsel, loadc, loads, write, load_pc, load_addr, addr_sel, reset_pc, ram_write;
+
+  // CL 1
+  always @ (*) begin
+    if(mem_cmd == MREAD && mem_addr == 9'h140)
+      tri_switch = 1'b1;
+    else 
+      tri_switch = 1'b0;
+  end
+
+  // CL 2
+  always @ (*) begin
+    if(mem_cmd == MWRITE && mem_addr == 9'h100)
+      led_load = 1'b1;
+    else 
+      led_load = 1'b0;
+  end
+
+  vDFFE #(
+          .data_width(8)
+          )
+          LED_REGISTER
+          (
+            .clk(clk),
+            .load(led_load),
+            .in(out[7:0]),
+            .out(LEDR[7:0])
+          );
 
   // Instruction Register
   vDFFE #(
@@ -88,9 +112,6 @@ module cpu #(
               .PC          (PC),
 
               // outputs
-              .Z_out       (Z),
-              .V_out       (V),
-              .N_out       (N),
               .datapath_out(out)
             );
 
@@ -98,7 +119,6 @@ module cpu #(
   fsm FSM_CONTROLLER(
                       .clk(clk),
                       .reset(reset),
-                      .s(s),
                       .op(op),
                       .opcode(opcode),
 
@@ -147,10 +167,18 @@ module cpu #(
   assign ram_read = (MREAD == mem_cmd) & msel;
 
   // Memory Data Logic
-  assign mdata = ram_read ? dout : {16{1'bz}};
+  always @ (*) begin
+    case({ram_read, tri_switch})
+      2'b10: mdata = dout;
+      2'b01: mdata = {8'b0, SW[7:0]};
+      2'b11: mdata = {8'b0, SW[7:0]};
+      2'b00: mdata = {16{1'bz}};
+      default: mdata = {16{1'bz}};
+    endcase
+  end
 
   // Next Program Counter Logic
-  assign next_pc = reset_pc ? 9'b0 : pc_out + 9'b1;
+  assign next_pc = reset_pc ? 9'b0 : PC + 9'b1;
 
   // Data Address
   vDFFE #(
@@ -173,13 +201,10 @@ module cpu #(
             .clk(clk),
             .load(load_pc),
             .in(next_pc),
-            .out(pc_out)
+            .out(PC)
           );
 
   // Memory Address Logic
-  assign mem_addr = addr_sel ? pc_out : data_addr_out;
-
-
-
+  assign mem_addr = addr_sel ? PC : data_addr_out;
 
 endmodule

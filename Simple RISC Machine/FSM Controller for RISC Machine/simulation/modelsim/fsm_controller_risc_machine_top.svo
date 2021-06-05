@@ -17,7 +17,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 15.0.0 Build 145 04/22/2015 SJ Web Edition"
 
-// DATE "05/31/2021 22:34:47"
+// DATE "06/05/2021 00:22:50"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -40,16 +40,16 @@ module fsm_controller_risc_machine_top (
 	HEX3,
 	HEX4,
 	HEX5);
-input 	[3:0] KEY;
-input 	[9:0] SW;
-input 	CLOCK_50;
-output 	[9:0] LEDR;
-output 	[6:0] HEX0;
-output 	[6:0] HEX1;
-output 	[6:0] HEX2;
-output 	[6:0] HEX3;
-output 	[6:0] HEX4;
-output 	[6:0] HEX5;
+input 	logic [3:0] KEY ;
+input 	logic [9:0] SW ;
+input 	logic CLOCK_50 ;
+output 	logic [9:0] LEDR ;
+output 	logic [6:0] HEX0 ;
+output 	logic [6:0] HEX1 ;
+output 	logic [6:0] HEX2 ;
+output 	logic [6:0] HEX3 ;
+output 	logic [6:0] HEX4 ;
+output 	logic [6:0] HEX5 ;
 
 // Design Ports Information
 // SW[8]	=>  Location: PIN_AD10,	 I/O Standard: 2.5 V,	 Current Strength: Default

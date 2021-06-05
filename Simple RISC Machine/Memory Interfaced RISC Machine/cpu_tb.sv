@@ -5,14 +5,17 @@ module cpu_tb();
   // INPUTS
   reg clk;
   reg reset;
-  reg [7:0] PC;
+  reg [7:0] SW;
 
   //OUTPUTS
   wire [data_width - 1:0] out;
+  wire [7:0] LEDR;
+  wire [8:0] PC;
   wire N;
   wire V;
   wire Z;
   wire [8:0] mem_addr;
+  wire [1:0] mem_cmd;
   wire w;
 
   cpu   #(
@@ -24,15 +27,12 @@ module cpu_tb();
   // INPUTS
   .clk(clk),
   .reset(reset),
-  .PC(PC),
+  .SW(SW),
 
   //OUTPUTS
   .out(out),
-  .N(N),
-  .V(V),
-  .Z(Z),
-  .mem_addr(mem_addr),
-  .w(w)
+  .w(w),
+  .LEDR(LEDR)
   );
 
   initial begin // Initialise the clk
@@ -45,8 +45,8 @@ module cpu_tb();
 
   initial begin
     // Reset
-
-    #500;
+    SW = 8'b00011011;
+    #1000;
 
     $stop(0);
   end

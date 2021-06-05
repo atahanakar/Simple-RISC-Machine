@@ -30,7 +30,7 @@ module instruction_decoder(
       3'b001: readnum = instruction[2:0]; // Rm
       3'b010: readnum = instruction[7:5]; // Rd
       3'b100: readnum = instruction[10:8]; // Rn
-      default: readnum = readnum;
+      default: readnum = {3'bxxx};
     endcase
   end
 

@@ -8,6 +8,7 @@ source_file = 1, C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RIS
 source_file = 1, C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/FSM Controller for RISC Machine/datapath.sv
 source_file = 1, C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/FSM Controller for RISC Machine/cpu.sv
 source_file = 1, C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/FSM Controller for RISC Machine/ALU.sv
+source_file = 1, C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/FSM Controller for RISC Machine/output_files/Chain1.cdf
 source_file = 1, C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/FSM Controller for RISC Machine/db/fsm_controller_risc_machine_top.cbx.xml
 design_name = fsm_controller_risc_machine_top
 instance = comp, \LEDR[0]~output , LEDR[0]~output, fsm_controller_risc_machine_top, 1

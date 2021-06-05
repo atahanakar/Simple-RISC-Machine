@@ -10,7 +10,7 @@ cModel Technology
 dC:/altera/15.0
 vALU
 Z0 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-Z1 !s110 1622679225
+Z1 !s110 1622874629
 !i10b 1
 !s100 lWR1F^0HEz_6dmfJ79=1=1
 IE4NUeA4__OnJiPiPZnQ=O3
@@ -26,7 +26,7 @@ Z4 OV;L;10.3d;59
 r1
 !s85 0
 31
-!s108 1622679225.952000
+!s108 1622874629.877000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/ALU.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/ALU.sv|
 !i113 1
@@ -34,61 +34,61 @@ Z5 o-work work -sv
 n@a@l@u
 vcpu
 R0
-Z6 !s110 1622679226
+!s110 1622885891
 !i10b 1
-!s100 bWV;MiEnY97Tz8__hK;CZ0
-IT:CaCG>=3ig<8ILhk>ZJW1
+!s100 NLmV`ch[0D]Dc?mXS5dZR2
+I9;2Tc>H5T>zD]GLVTe>iJ3
 R2
 !s105 cpu_sv_unit
 S1
 R3
-w1622679035
-8C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/cpu.sv
-FC:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/cpu.sv
+w1622885495
+8C:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Memory Interfaced RISC Machine\cpu.sv
+FC:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Memory Interfaced RISC Machine\cpu.sv
 L0 1
 R4
 r1
 !s85 0
 31
-!s108 1622679225.994000
-!s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/cpu.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/cpu.sv|
+!s108 1622885891.830000
+!s107 C:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Memory Interfaced RISC Machine\cpu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Memory Interfaced RISC Machine\cpu.sv|
 !i113 1
 R5
 vcpu_tb
 R0
-R6
+!s110 1622879998
 !i10b 1
-!s100 M3SIEFTW@e_^YZ8`UMYTK2
-IgQ_8bL?8QZMW8dMJ2A@SD0
+!s100 U^F63N^aJ:UTN^3AN`8Kz1
+IT9GXA`?gWOTA7?zEc81:H2
 R2
 !s105 cpu_tb_sv_unit
 S1
 R3
-w1622619469
-8C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/cpu_tb.sv
-FC:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/cpu_tb.sv
+w1622879991
+8C:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Memory Interfaced RISC Machine\cpu_tb.sv
+FC:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Memory Interfaced RISC Machine\cpu_tb.sv
 L0 3
 R4
 r1
 !s85 0
 31
-!s108 1622679226.448000
-!s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/cpu_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/cpu_tb.sv|
+!s108 1622879998.159000
+!s107 C:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Memory Interfaced RISC Machine\cpu_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\ATAHAN\Documents\GitHub\Simple-RISC-Machine\Simple RISC Machine\Memory Interfaced RISC Machine\cpu_tb.sv|
 !i113 1
 R5
 vdatapath
 R0
-R6
+R1
 !i10b 1
-!s100 L[[J5L;J6JaF<UlP0gBGb0
-IB0J7VkS?ZfZ?7R]UWQoHn3
+!s100 JQV`F;2C3F2@ih?h8`1?51
+I=J2K5kICFRi1j90^DcGoh3
 R2
 !s105 datapath_sv_unit
 S1
 R3
-w1622522420
+w1622870344
 8C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/datapath.sv
 FC:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/datapath.sv
 L0 1
@@ -96,7 +96,7 @@ R4
 r1
 !s85 0
 31
-!s108 1622679226.038000
+!s108 1622874629.968000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/datapath.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/datapath.sv|
 !i113 1
@@ -123,15 +123,15 @@ r1
 o-work work
 vfsm
 R0
-R6
+!s110 1622888000
 !i10b 1
-!s100 @QoTdRX[<LGm^?mSgZfiX0
-I2KPzfH?blTTl?X8f?@HC;1
+!s100 EDK>_E_@aZGnm?=jFmhjQ0
+ILSaVM8?;WEIVnf0I0iZAf2
 R2
 !s105 fsm_sv_unit
 S1
 R3
-w1622620864
+w1622887984
 8C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/fsm.sv
 FC:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/fsm.sv
 L0 2
@@ -139,68 +139,68 @@ R4
 r1
 !s85 0
 31
-!s108 1622679226.100000
+!s108 1622888000.098000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/fsm.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/fsm.sv|
 !i113 1
 R5
 vfsm_controller_risc_machine_top
 R0
-R6
+!s110 1622679226
 !i10b 1
 !s100 in`mETffR4?<U@OhkYea32
 IS:JMF;kB40DY8icO[=^Y13
 R2
-Z7 !s105 memory_interfaced_risc_machine_top_sv_unit
+Z6 !s105 memory_interfaced_risc_machine_top_sv_unit
 S1
 R3
-Z8 w1622679074
-Z9 8C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/memory_interfaced_risc_machine_top.sv
-Z10 FC:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/memory_interfaced_risc_machine_top.sv
+w1622679074
+Z7 8C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/memory_interfaced_risc_machine_top.sv
+Z8 FC:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/memory_interfaced_risc_machine_top.sv
 L0 2
 R4
 r1
 !s85 0
 31
-Z11 !s108 1622679226.146000
-Z12 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/memory_interfaced_risc_machine_top.sv|
-Z13 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/memory_interfaced_risc_machine_top.sv|
+!s108 1622679226.146000
+Z9 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/memory_interfaced_risc_machine_top.sv|
+Z10 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/memory_interfaced_risc_machine_top.sv|
 !i113 1
 R5
 vinput_iface
 R0
-R6
+Z11 !s110 1622868699
 !i10b 1
-!s100 W:F6;[9;hQakPU[51<=6=3
-I4^mDmRcEkVeG@_OoePO`53
+!s100 ]kWhGCz]>iQPPL9Bf<kOL0
+IVW<jXAEeic;AK@6PLAIVZ3
 R2
-R7
+R6
 S1
 R3
+Z12 w1622868692
+R7
 R8
-R9
-R10
-L0 105
+L0 66
 R4
 r1
 !s85 0
 31
-R11
-R12
-R13
+Z13 !s108 1622868699.745000
+R9
+R10
 !i113 1
 R5
 vinstruction_decoder
 R0
-R6
+Z14 !s110 1622874630
 !i10b 1
-!s100 n63>MZaC89Mo[f;OE9Il73
-I;?iU0`?UDe]VV514f5OZ50
+!s100 n;OafLOSkYL=E2X2X93X`2
+I5fCF4A?1nHF6f7Bf:kf1W0
 R2
 !s105 instruction_decoder_sv_unit
 S1
 R3
-w1622619121
+w1622869446
 8C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/instruction_decoder.sv
 FC:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/instruction_decoder.sv
 L0 1
@@ -208,14 +208,37 @@ R4
 r1
 !s85 0
 31
-!s108 1622679226.496000
+!s108 1622874630.299000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/instruction_decoder.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/instruction_decoder.sv|
 !i113 1
 R5
+vmemory_interfaced_risc_machine_top
+R0
+Z15 !s110 1622879953
+!i10b 1
+!s100 P8ehMEjE20?m1_^bD[f8G1
+I@m;m9EZ;n]4ea5LJc2ROW1
+R2
+R6
+S1
+R3
+Z16 w1622879763
+R7
+R8
+L0 2
+R4
+r1
+!s85 0
+31
+Z17 !s108 1622879953.071000
+R9
+R10
+!i113 1
+R5
 vRAM
 R0
-R6
+R14
 !i10b 1
 !s100 N_=E>KZ6:UWl1VW7JH64I1
 IDNcQHDR8g?9g3V3H1@Nc@0
@@ -231,7 +254,7 @@ R4
 r1
 !s85 0
 31
-!s108 1622679226.196000
+!s108 1622874630.121000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/ram.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/ram.sv|
 !i113 1
@@ -239,7 +262,7 @@ R5
 n@r@a@m
 vregfile
 R0
-R6
+R14
 !i10b 1
 !s100 4[MNelJlMa^JTl7mzjW<]0
 I@HOK;53`MB@9c4HQPOfo^3
@@ -255,14 +278,14 @@ R4
 r1
 !s85 0
 31
-!s108 1622679226.239000
+!s108 1622874630.166000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/regfile.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/regfile.sv|
 !i113 1
 R5
 vshifter
 R0
-R6
+R14
 !i10b 1
 !s100 cQm6Y7CBGKBXE7?GFbaQb3
 IDdL`g`XTlTGFc5>SYcB`:3
@@ -278,55 +301,55 @@ R4
 r1
 !s85 0
 31
-!s108 1622679226.322000
+!s108 1622874630.209000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/shifter.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/shifter.sv|
 !i113 1
 R5
 vsseg
 R0
-R6
+R15
 !i10b 1
-!s100 <kN91:]97j8Zc<@kEd?lE1
-Iog]26KW4=SBZZ>QWRC?BY3
+!s100 T]Z=>Rz;Y;]HgQ<OT2PUX2
+IH`[55h[A^MR_U:BYE0_?P0
 R2
-R7
+R6
 S1
 R3
+R16
+R7
 R8
-R9
-R10
-L0 126
+L0 46
 R4
 r1
 !s85 0
 31
-R11
-R12
-R13
+R17
+R9
+R10
 !i113 1
 R5
 vvDFF
 R0
-R6
+R11
 !i10b 1
-!s100 zB_JLSjVh<K1bAM8GNP0C0
-I36mkECISLABK?@Fc2035T0
+!s100 M;m8:fTIkLFmT<E:Sj;6V0
+Im[Ud54NY0`;To]bIW[kT:1
 R2
-R7
+R6
 S1
 R3
+R12
+R7
 R8
-R9
-R10
-L0 116
+L0 77
 R4
 r1
 !s85 0
 31
-R11
-R12
 R13
+R9
+R10
 !i113 1
 R5
 nv@d@f@f
@@ -348,7 +371,7 @@ R4
 r1
 !s85 0
 31
-!s108 1622679225.907000
+!s108 1622874629.829000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/vDFFE.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Memory Interfaced RISC Machine/vDFFE.sv|
 !i113 1

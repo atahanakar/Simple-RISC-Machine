@@ -6,9 +6,10 @@ module datapath #(
     input logic [data_width - 1:0] mdata,
     input logic [data_width - 1:0] sximm8,
     input logic [data_width - 1:0] sximm5,
-    input logic [7:0] PC,
+    input logic [8:0] PC,
     input logic [2:0] writenum,
     input logic [2:0] readnum,
+
     // ALU and Shift operations
     input logic [1:0] ALUop,
     input logic [1:0] shift,
@@ -39,14 +40,15 @@ module datapath #(
   logic [data_width - 1:0] data_in, data_out, out, Ain, Bin, in;
   logic [data_width - 1:0] sout, Aout;
   logic Z, N, V;
+
   // Mux #1
   always @ (*) begin
     case(vsel)
       2'b00: data_in = datapath_out; // C
-      2'b01: data_in = {8'b0, PC};
+      2'b01: data_in = {7'b0, PC};
       2'b10: data_in = sximm8;
       2'b11: data_in = mdata;
-      default: data_in = data_in;
+      default: data_in = {16{1'bx}};
     endcase
   end
 

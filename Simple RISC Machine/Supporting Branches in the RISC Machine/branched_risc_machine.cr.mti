@@ -55,6 +55,13 @@ Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 Top level modules:
 	shifter
 
+} {} {}} {C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/fsm.sv} {1 {vlog -work work -sv -stats=none {C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/fsm.sv}
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module fsm
+
+Top level modules:
+	fsm
+
 } {} {}} {C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/regfile.sv} {1 {vlog -work work -sv -stats=none {C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/regfile.sv}
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 -- Compiling module regfile

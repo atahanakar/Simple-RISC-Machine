@@ -8,7 +8,8 @@
     MOV R2,#9         // R2 contains third parameter
     MOV R3,#20        // R3 contains fourth parameter
     BL  leaf_example  // call leaf_example(1,5,9,20);
-    STR R0,[R4]       // result = leaf_example(1,5,9,20);  
+    STR R0,[R4]       // result = leaf_example(1,5,9,20);
+    LDR R5,[R4]       // Show the result at R5
     HALT
 leaf_example:
     STR R4,[R6]       // save R4 for use afterwards

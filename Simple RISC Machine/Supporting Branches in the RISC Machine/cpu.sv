@@ -19,7 +19,7 @@ module cpu #(
   parameter MREAD  = 2'b11;
 
   // Essential wires
-  logic [data_width - 1:0] reg_out, sximm5, sximm8, dout, mdata;
+  logic [data_width - 1:0] reg_out, sximm5, sximm8, dout, mdata, regfile_out;
   logic [8:0] data_addr_out, next_pc, PC, mem_addr;
   logic [2:0] opcode;
   logic [1:0] op, shift, ALUop, vsel, mem_cmd;
@@ -114,6 +114,7 @@ module cpu #(
 
               // outputs
               .datapath_out(out),
+              .regfile_out(regfile_out),
               .Z_out(Z),
               .N_out(N),
               .V_out(V)
@@ -189,32 +190,49 @@ module cpu #(
       2'b00: next_pc = PC + 1;
       2'b01: next_pc = 9'b0;
       2'b10: begin
-                if(cond == 3'b000)
-                  next_pc = PC + 1 + sximm8;
-                
-                else if(cond == 3'b001)
-                  if(Z == 1)
-                    next_pc = PC + 1 + sximm8;
-                  else
-                    next_pc = PC + 1;
+                if(opcode == 3'b001)
+                  if(cond == 3'b000)
+                    next_pc = PC + sximm8;
+                  
+                  else if(cond == 3'b001)
+                    if(Z == 1)
+                      next_pc = PC + sximm8;
+                    else
+                      next_pc = PC;
 
-                else if(cond == 3'b010)
-                  if(Z == 0)
-                    next_pc = PC + 1 + sximm8;
+                  else if(cond == 3'b010)
+                    if(Z == 0)
+                      next_pc = PC + sximm8;
+                    else
+                      next_pc = PC;
+                  
+                  else if(cond == 3'b011)
+                    if(N != V)
+                      next_pc = PC + sximm8;
+                    else 
+                      next_pc = PC;
+
+                  else if(cond == 3'b100)
+                    if(N != V || Z == 1)
+                      next_pc = PC + sximm8;
+                    else
+                      next_pc = PC;
+
                   else
-                    next_pc = PC + 1;
-                
-                else if(cond == 3'b011)
-                  if(N != V)
-                    next_pc = PC + 1 + sximm8;
+                    next_pc = PC;
+
+                else if(opcode == 3'b010)
+                  if(op == 2'b11)
+                    next_pc = PC + sximm8;
+                  else if(op == 2'b00)
+                    next_pc = regfile_out[8:0];
+                  else if(op == 2'b10)
+                    next_pc = regfile_out[8:0];  
                   else 
-                    next_pc = PC + 1;
+                    next_pc = PC;
+                else
+                  next_pc = PC;          
 
-                else if(cond == 3'b100)
-                  if(N != V || Z == 1)
-                    next_pc = PC + 1 + sximm8;
-                  else
-                    next_pc = PC + 1;
               end
       2'b11: next_pc = 9'b0;
       default: next_pc = 9'b0;

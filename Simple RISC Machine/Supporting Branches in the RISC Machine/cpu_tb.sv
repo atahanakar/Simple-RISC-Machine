@@ -20,7 +20,7 @@ module cpu_tb();
 
   cpu   #(
     .data_width(data_width),
-    .filename("data.txt")
+    .filename("test2.txt")
   )
   DUT
   (
@@ -46,7 +46,7 @@ module cpu_tb();
   initial begin
     // Reset
     SW = 8'b00011011;
-    #1000;
+    #3000;
 
     $stop(0);
   end

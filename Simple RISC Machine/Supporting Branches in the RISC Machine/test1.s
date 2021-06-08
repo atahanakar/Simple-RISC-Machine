@@ -14,6 +14,7 @@ LOOP:                // for(i=0; i<N; i++) sum = sum + amount[i];
     BLT LOOP         // if i < N goto LOOP
     MOV R3,result
     STR R2,[R3]      // result = sum
+    LDR R7,[R3]    // Show the result at R7
     HALT
 
 N:

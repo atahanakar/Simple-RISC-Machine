@@ -29,6 +29,7 @@ module datapath #(
 
     // OUTPUTS
     output logic [data_width - 1:0] datapath_out,
+    output logic [data_width - 1:0] regfile_out,
 
     // Flag Outputs
     output logic Z_out,  // Zero Flag
@@ -40,6 +41,9 @@ module datapath #(
   logic [data_width - 1:0] data_in, data_out, out, Ain, Bin, in;
   logic [data_width - 1:0] sout, Aout;
   logic Z, N, V;
+
+  // REGFILE ' s Output
+  assign regfile_out = data_out;
 
   // Mux #1
   always @ (*) begin

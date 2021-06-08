@@ -58,14 +58,19 @@ module fsm(
   STR_6     = 27'b0_01_0_0_0_0_0_0_1_0_0_0_000_00_1_0_0__011100, // 28
   STR_7     = 27'b0_01_0_0_0_0_0_0_0_0_0_0_000_00_0_0_0__011101, // 29
   HALT      = 27'b0_00_1_0_0_1_0_0_0_0_0_1_000_00_0_0_0__011111, // 31
-  BRANCH_1  = 27'b1_00_0_0_0_1_0_0_0_0_0_0_000_00_0_0_0__100000  // 32
+  BRANCH    = 27'b1_00_0_0_0_1_0_0_0_0_0_0_000_00_0_0_0__100000, // 32
+  BL_1      = 27'b0_00_0_0_0_0_0_0_0_0_1_0_100_01_0_0_0__100001,  // 33
+  BL_2      = 27'b1_00_0_0_0_1_0_0_0_0_0_0_000_00_0_0_0__100010,
+  BX_1      = 27'b1_00_0_0_0_1_0_0_0_0_0_0_010_00_0_0_0__100011,
+  BLX_1     = 27'b0_00_0_0_0_0_0_0_0_0_1_0_100_01_0_0_0__100100,
+  BLX_2     = 27'b1_00_0_0_0_1_0_0_0_0_0_0_000_00_0_0_0__100101
   } state_logic;
   //logic [25:0] state;
 
   state_logic state;
 
   // Output logic
-  assign load_bpc  = state[27];
+  assign load_bpc  = state[26];
   assign mem_cmd   = state[25:24];
   assign reset_pc  = state[23];
   assign addr_sel  = state[22];
@@ -124,7 +129,16 @@ module fsm(
                   state <= STR_1;
 
                 else if(opcode == 3'b001)
-                  state <= BRANCH_1;
+                  state <= BRANCH;
+                
+                else if(opcode == 3'b010 && op == 2'b11)
+                  state <= BL_1;
+                
+                else if(opcode == 3'b010 && op == 2'b00)
+                  state <= BX_1;
+
+                else if(opcode == 3'b010 && op == 2'b11)
+                  state <= BLX_1;
 
                 else if(opcode == 3'b111)
                   state <= HALT;
@@ -239,10 +253,33 @@ module fsm(
                state <= IF1;
               end
 
-        // BRANCH State
-        BRANCH_1: begin
+        // SIMPLE BRANCH State
+        BRANCH: begin
                     state <= IF1;
                   end
+        
+        // Branch and Link
+        BL_1: begin
+                state <= BL_2;
+              end
+
+        BL_2: begin
+                state <= IF1;
+              end
+        
+        // Branch and Return
+        BX_1: begin
+                state <= IF1;
+              end
+
+        // Branch and Indirect Call
+        BLX_1: begin
+                state <= BLX_2;
+               end
+
+        BLX_2: begin
+                state <= IF1;
+               end
 
         // HALT State
         HALT: begin

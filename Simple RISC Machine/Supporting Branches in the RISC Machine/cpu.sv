@@ -26,7 +26,7 @@ module cpu #(
   logic [2:0] nsel, cond;
   logic [2:0] readnum, writenum;
   logic msel, ram_read;
-  logic tri_switch, led_load;
+  logic tri_switch, led_load, load_bpc;
   logic load_ir, loada, loadb, asel, bsel, loadc, loads, write, load_pc, load_addr, addr_sel, reset_pc, ram_write, Z, N, V;
 
   // CL 1
@@ -125,7 +125,6 @@ module cpu #(
                       .clk(clk),
                       .reset(reset),
                       .op(op),
-                      .cond(cond),
                       .opcode(opcode),
 
                       //OUTPUTS
@@ -135,6 +134,7 @@ module cpu #(
                       .loads(loads),
                       .load_ir(load_ir),
                       .load_pc(load_pc),
+                      .load_bpc(load_bpc),
                       .load_addr(load_addr),
                       .addr_sel(addr_sel),
                       .reset_pc(reset_pc),

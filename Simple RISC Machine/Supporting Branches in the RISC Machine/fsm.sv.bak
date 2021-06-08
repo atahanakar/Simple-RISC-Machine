@@ -124,13 +124,14 @@ module fsm(
                   state <= STR_1;
 
                 else if(opcode == 3'b001)
-                  state <= BRANCH_1;
+                  state <= B_1;
 
                 else if(opcode == 3'b111)
                   state <= HALT;
 
 					 else 
 						state <= HALT;
+						
 					end
 					
 

@@ -21,11 +21,11 @@ module branched_risc_machine_top(
 
   cpu #(
          .data_width (16),
-         .filename ("data.txt")
+         .filename ("test1.txt")
         ) 
         CPU_RAM 
         (
-         .clk     (~KEY[0]), // recall from Lab 4 that KEY0 is 1 when NOT pushed
+         .clk     (CLOCK_50), // recall from Lab 4 that KEY0 is 1 when NOT pushed
          .reset   (~KEY[1]),
          .SW      (SW[7:0]),
          .out     (out),

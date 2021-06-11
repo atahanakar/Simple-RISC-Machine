@@ -21,7 +21,7 @@ module branched_risc_machine_top(
 
   cpu #(
          .data_width (16),
-         .filename ("test1.txt")
+         .filename ("test3.txt")
         ) 
         CPU_RAM 
         (

@@ -10,7 +10,7 @@ cModel Technology
 dC:/altera/15.0
 vALU
 Z0 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-Z1 !s110 1623192585
+Z1 !s110 1623376185
 !i10b 1
 !s100 lWR1F^0HEz_6dmfJ79=1=1
 IXj^gRnoflXY^m7XOcVa<n3
@@ -26,7 +26,7 @@ Z4 OV;L;10.3d;59
 r1
 !s85 0
 31
-!s108 1623192585.788000
+!s108 1623376185.048000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/ALU.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/ALU.sv|
 !i113 1
@@ -36,13 +36,13 @@ vbranched_risc_machine_top
 R0
 R1
 !i10b 1
-!s100 Ri]L2Skg55kJ2ognmnA8i2
-I_UkEX?Bk;Vn[jNnD[[c:Q0
+!s100 h_`lY`XT=k7VQn3JTHFLF0
+IYWlS7gMMCI6JG?V06GaAz2
 R2
 Z6 !s105 branched_risc_machine_top_sv_unit
 S1
 R3
-Z7 w1623192327
+Z7 w1623376118
 Z8 8C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/branched_risc_machine_top.sv
 Z9 FC:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/branched_risc_machine_top.sv
 L0 2
@@ -50,7 +50,7 @@ R4
 r1
 !s85 0
 31
-Z10 !s108 1623192585.834000
+Z10 !s108 1623376185.093000
 Z11 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/branched_risc_machine_top.sv|
 Z12 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/branched_risc_machine_top.sv|
 !i113 1
@@ -73,22 +73,22 @@ R4
 r1
 !s85 0
 31
-!s108 1623192585.880000
+!s108 1623376185.140000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/cpu.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/cpu.sv|
 !i113 1
 R5
 vcpu_tb
 R0
-!s110 1623192703
+!s110 1623376232
 !i10b 1
-!s100 >;]HEnKOU21^nkz4jGb9Y0
-I6gFSdi=hE=QXW3^D[YAfW2
+!s100 7If@mO8Fc;fQ@E;VCGh^[3
+I]bU8aJ0?[5GE8RC5a=z8<2
 R2
 !s105 cpu_tb_sv_unit
 S1
 R3
-w1623192697
+w1623376227
 8C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/cpu_tb.sv
 FC:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/cpu_tb.sv
 L0 3
@@ -96,7 +96,7 @@ R4
 r1
 !s85 0
 31
-!s108 1623192703.074000
+!s108 1623376232.150000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/cpu_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/cpu_tb.sv|
 !i113 1
@@ -119,7 +119,7 @@ R4
 r1
 !s85 0
 31
-!s108 1623192585.926000
+!s108 1623376185.184000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/datapath.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/datapath.sv|
 !i113 1
@@ -142,14 +142,14 @@ R4
 r1
 !s85 0
 31
-!s108 1623192585.968000
+!s108 1623376185.227000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/fsm.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/fsm.sv|
 !i113 1
 R5
 vinstruction_decoder
 R0
-Z13 !s110 1623192586
+R1
 !i10b 1
 !s100 1oOOD_KH>9WJeTchKh?aY2
 ITn3_L7VogEi[Z<YcD2D921
@@ -165,14 +165,14 @@ R4
 r1
 !s85 0
 31
-!s108 1623192586.012000
+!s108 1623376185.449000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/instruction_decoder.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/instruction_decoder.sv|
 !i113 1
 R5
 vRAM
 R0
-R13
+R1
 !i10b 1
 !s100 N_=E>KZ6:UWl1VW7JH64I1
 I2caZ0Vhe0VfaVZ=do2C=d0
@@ -188,7 +188,7 @@ R4
 r1
 !s85 0
 31
-!s108 1623192586.065000
+!s108 1623376185.492000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/ram.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/ram.sv|
 !i113 1
@@ -196,7 +196,7 @@ R5
 n@r@a@m
 vregfile
 R0
-R13
+R1
 !i10b 1
 !s100 4[MNelJlMa^JTl7mzjW<]0
 I4KWTEHMP_[?N1c35WFMGI0
@@ -212,14 +212,14 @@ R4
 r1
 !s85 0
 31
-!s108 1623192586.109000
+!s108 1623376185.536000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/regfile.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/regfile.sv|
 !i113 1
 R5
 vshifter
 R0
-R13
+R1
 !i10b 1
 !s100 cQm6Y7CBGKBXE7?GFbaQb3
 I[Y?MCOYbBfKoUzQJ4mj5S0
@@ -235,7 +235,7 @@ R4
 r1
 !s85 0
 31
-!s108 1623192586.151000
+!s108 1623376185.580000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/shifter.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/shifter.sv|
 !i113 1
@@ -281,7 +281,7 @@ R4
 r1
 !s85 0
 31
-!s108 1623192585.673000
+!s108 1623376184.935000
 !s107 C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/vDFFE.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/vDFFE.sv|
 !i113 1

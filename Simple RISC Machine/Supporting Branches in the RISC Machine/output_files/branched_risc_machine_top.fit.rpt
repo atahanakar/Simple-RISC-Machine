@@ -1,5 +1,5 @@
 Fitter report for branched_risc_machine_top
-Tue Jun 08 15:46:31 2021
+Thu Jun 10 19:12:28 2021
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -65,7 +65,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +---------------------------------+--------------------------------------------+
-; Fitter Status                   ; Successful - Tue Jun 08 15:46:31 2021      ;
+; Fitter Status                   ; Successful - Thu Jun 10 19:12:28 2021      ;
 ; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                   ; branched_risc_machine_top                  ;
 ; Top-level Entity Name           ; branched_risc_machine_top                  ;
@@ -154,13 +154,12 @@ agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.49        ;
+; Average used               ; 1.71        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;  11.6%      ;
-;     Processors 5-6         ;   7.0%      ;
+;     Processors 2-6         ;  14.3%      ;
 ;     Processors 7-12        ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -1726,7 +1725,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;    |cpu:CPU_RAM|                             ; 231.3 (11.7)         ; 271.8 (14.0)                     ; 43.5 (2.3)                                        ; 3.0 (0.0)                        ; 0.0 (0.0)            ; 336 (41)            ; 276 (0)                   ; 0 (0)         ; 4096              ; 1     ; 0          ; 0    ; 0            ; |branched_risc_machine_top|cpu:CPU_RAM                                                                ; work         ;
 ;       |RAM:RW_MEM|                           ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 4096              ; 1     ; 0          ; 0    ; 0            ; |branched_risc_machine_top|cpu:CPU_RAM|RAM:RW_MEM                                                     ; work         ;
 ;          |altsyncram:mem_rtl_0|              ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 4096              ; 1     ; 0          ; 0    ; 0            ; |branched_risc_machine_top|cpu:CPU_RAM|RAM:RW_MEM|altsyncram:mem_rtl_0                                ; work         ;
-;             |altsyncram_q8t1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 4096              ; 1     ; 0          ; 0    ; 0            ; |branched_risc_machine_top|cpu:CPU_RAM|RAM:RW_MEM|altsyncram:mem_rtl_0|altsyncram_q8t1:auto_generated ; work         ;
+;             |altsyncram_r6t1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 4096              ; 1     ; 0          ; 0    ; 0            ; |branched_risc_machine_top|cpu:CPU_RAM|RAM:RW_MEM|altsyncram:mem_rtl_0|altsyncram_r6t1:auto_generated ; work         ;
 ;       |datapath:DP|                          ; 125.0 (25.0)         ; 153.0 (26.2)                     ; 31.0 (1.5)                                        ; 3.0 (0.3)                        ; 0.0 (0.0)            ; 147 (45)            ; 187 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |branched_risc_machine_top|cpu:CPU_RAM|datapath:DP                                                    ; work         ;
 ;          |ALU:U2|                            ; 24.9 (24.9)          ; 24.0 (24.0)                      ; 0.0 (0.0)                                         ; 0.9 (0.9)                        ; 0.0 (0.0)            ; 45 (45)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |branched_risc_machine_top|cpu:CPU_RAM|datapath:DP|ALU:U2                                             ; work         ;
 ;          |regfile:U0|                        ; 56.2 (25.5)          ; 80.7 (34.5)                      ; 25.7 (9.7)                                        ; 1.3 (0.8)                        ; 0.0 (0.0)            ; 57 (57)             ; 128 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |branched_risc_machine_top|cpu:CPU_RAM|datapath:DP|regfile:U0                                         ; work         ;
@@ -1952,13 +1951,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+----------+---------+----------------------+------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
-+---------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+------------+--------------------------------------------------------+----------------+----------------------+-----------------+-----------------+---------------------------------------------+
-; Name                                                                                  ; Type ; Mode             ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M10K blocks ; MLAB cells ; MIF                                                    ; Location       ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ; Fits in MLABs                               ;
-+---------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+------------+--------------------------------------------------------+----------------+----------------------+-----------------+-----------------+---------------------------------------------+
-; cpu:CPU_RAM|RAM:RW_MEM|altsyncram:mem_rtl_0|altsyncram_q8t1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 256          ; 16           ; 256          ; 16           ; yes                    ; no                      ; yes                    ; no                      ; 4096 ; 256                         ; 16                          ; 256                         ; 16                          ; 4096                ; 1           ; 0          ; db/branched_risc_machine_top.ram0_RAM_d47dc4a5.hdl.mif ; M10K_X76_Y6_N0 ; Old data             ; New data        ; New data        ; No - Unsupported Mixed Feed Through Setting ;
-+---------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+------------+--------------------------------------------------------+----------------+----------------------+-----------------+-----------------+---------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
++---------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+------------+-------------------------------------------------------+----------------+----------------------+-----------------+-----------------+---------------------------------------------+
+; Name                                                                                  ; Type ; Mode             ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M10K blocks ; MLAB cells ; MIF                                                   ; Location       ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ; Fits in MLABs                               ;
++---------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+------------+-------------------------------------------------------+----------------+----------------------+-----------------+-----------------+---------------------------------------------+
+; cpu:CPU_RAM|RAM:RW_MEM|altsyncram:mem_rtl_0|altsyncram_r6t1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 256          ; 16           ; 256          ; 16           ; yes                    ; no                      ; yes                    ; no                      ; 4096 ; 256                         ; 16                          ; 256                         ; 16                          ; 4096                ; 1           ; 0          ; db/branched_risc_machine_top.ram0_RAM_cae340a.hdl.mif ; M10K_X76_Y6_N0 ; Old data             ; New data        ; New data        ; No - Unsupported Mixed Feed Through Setting ;
++---------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+------------+-------------------------------------------------------+----------------+----------------------+-----------------+-----------------+---------------------------------------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
 
@@ -2281,7 +2280,7 @@ This will disable optimization of problematic paths and expose them for further 
 ; cpu:CPU_RAM|vDFFE:Instruction_Register|out[2]  ; cpu:CPU_RAM|datapath:DP|vDFFE:status|out[2]                                                                ; 0.060             ;
 ; cpu:CPU_RAM|datapath:DP|vDFFE:B|out[3]         ; cpu:CPU_RAM|datapath:DP|vDFFE:status|out[2]                                                                ; 0.060             ;
 ; cpu:CPU_RAM|vDFFE:Instruction_Register|out[12] ; cpu:CPU_RAM|datapath:DP|vDFFE:status|out[2]                                                                ; 0.060             ;
-; cpu:CPU_RAM|datapath:DP|vDFFE:C|out[15]        ; cpu:CPU_RAM|RAM:RW_MEM|altsyncram:mem_rtl_0|altsyncram_q8t1:auto_generated|ram_block1a15~porta_datain_reg0 ; 0.040             ;
+; cpu:CPU_RAM|datapath:DP|vDFFE:C|out[15]        ; cpu:CPU_RAM|RAM:RW_MEM|altsyncram:mem_rtl_0|altsyncram_r6t1:auto_generated|ram_block1a15~porta_datain_reg0 ; 0.040             ;
 ; cpu:CPU_RAM|datapath:DP|vDFFE:C|out[10]        ; cpu:CPU_RAM|datapath:DP|regfile:U0|vDFFE:reg_en[4].R|out[10]                                               ; 0.020             ;
 ; cpu:CPU_RAM|datapath:DP|vDFFE:C|out[12]        ; cpu:CPU_RAM|datapath:DP|regfile:U0|vDFFE:reg_en[4].R|out[12]                                               ; 0.019             ;
 ; cpu:CPU_RAM|datapath:DP|vDFFE:C|out[11]        ; cpu:CPU_RAM|datapath:DP|regfile:U0|vDFFE:reg_en[4].R|out[11]                                               ; 0.018             ;
@@ -2518,7 +2517,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.83 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.82 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2527,10 +2526,10 @@ Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/ATAHAN/Documents/GitHub/Simple-RISC-Machine/Simple RISC Machine/Supporting Branches in the RISC Machine/output_files/branched_risc_machine_top.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 196 warnings
-    Info: Peak virtual memory: 6797 megabytes
-    Info: Processing ended: Tue Jun 08 15:46:31 2021
-    Info: Elapsed time: 00:00:45
-    Info: Total CPU time (on all processors): 00:01:44
+    Info: Peak virtual memory: 6778 megabytes
+    Info: Processing ended: Thu Jun 10 19:12:29 2021
+    Info: Elapsed time: 00:00:44
+    Info: Total CPU time (on all processors): 00:01:40
 
 
 +----------------------------+

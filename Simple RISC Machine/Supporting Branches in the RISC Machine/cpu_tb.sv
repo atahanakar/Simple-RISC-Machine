@@ -20,7 +20,7 @@ module cpu_tb();
 
   cpu   #(
     .data_width(data_width),
-    .filename("test1.txt")
+    .filename("test3.txt")
   )
   DUT
   (
